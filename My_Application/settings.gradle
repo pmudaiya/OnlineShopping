@@ -1,2 +1,0 @@
-include ':app', ':android-card-stack-0.1.4', ':mpandroidchartlibrary-2-2-4'
-
