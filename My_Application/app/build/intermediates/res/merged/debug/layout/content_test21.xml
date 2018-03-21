@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="5"
+    android:orientation="vertical"
+    android:paddingBottom="30sp"
+    android:paddingLeft="30sp"
+    android:paddingRight="30sp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/tets21"
+    tools:context="com.prakhar_pc.my_application.Test2"
+    tools:showIn="@layout/activity_test2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:weightSum="12"
+        android:orientation="vertical"
+        android:background="#10262328">
+        <!--    <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:background="#50266368"
+                android:layout_marginLeft="2sp"
+                android:layout_marginRight="2sp"
+                android:layout_marginTop="2sp"
+                android:layout_marginBottom="3sp"
+                android:elevation="4sp"
+                android:textSize="18sp"
+                android:text="Not Being able to sleep or control your worrying?"
+                android:gravity="center_vertical|center_horizontal" /> -->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:text_view="http://schemas.android.com/tools"
+            android:id="@+id/card_view1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            card_view:cardBackgroundColor="#54000000"
+            card_view:contentPaddingBottom="2sp"
+            card_view:contentPaddingLeft="2sp"
+            card_view:contentPaddingRight="2sp"
+            android:paddingRight="2sp"
+            android:foreground="@drawable/custom_bg"
+            card_view:cardCornerRadius="2dp"
+            android:layout_marginBottom="2sp">
+            <TextView
+                android:id="@+id/country_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:text="Not Being able to sleep or control your worrying?"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:layout_alignParentBottom="true"
+                android:background="#10262238"
+                />
+
+        </android.support.v7.widget.CardView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recycler"
+                android:background="#54000000"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
